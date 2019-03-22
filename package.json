@@ -1,0 +1,22 @@
+{
+  "name": "w3-json-to-excel",
+  "version": "1.0.0",
+  "description": "W3JsonToExcel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakster55/W3JsonToExcel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bakster55/W3JsonToExcel/issues"
+  },
+  "homepage": "https://github.com/bakster55/W3JsonToExcel#readme",
+  "devDependencies": {
+    "xlsx": "^0.14.1"
+  }
+}

@@ -1,0 +1,963 @@
+{
+    "original": {
+        "desc": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Dagger of Escape"
+            }
+        ],
+        "modt": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 11000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 12000
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01W"
+            }
+        ],
+        "tkno": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Increases the level of the Hero by 1 when used."
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Tome of Power"
+            }
+        ],
+        "gcel": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Increases the attack speed of the Hero by 15% when worn."
+            }
+        ],
+        "shdt": [
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A02B,AIcf"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Aegis of the Gods"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Aegis of the Gods"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Provides 40 armour and grants Permanent Immolation."
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteArmor.blp"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 35000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 25000
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Provides 40 armour and grants Permanent Immolation."
+            }
+        ]
+    },
+    "custom": {
+        "I002:rde3": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Provides 10 armour."
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Provides 10 armour."
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Leather Hauberk."
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 750
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "iarm",
+                "type": "string",
+                "value": "Metal"
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01H"
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeOne.blp"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Leather Hauberk"
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 750
+            }
+        ],
+        "I003:rde3": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Provides 20 armour."
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Provides 20 armour."
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Iron Half-plate"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 5500
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 5500
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "iarm",
+                "type": "string",
+                "value": "Metal"
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01F"
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNImprovedMoonArmor.blp"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Iron Half-plate"
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I006:ratc": [
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01T"
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNShamanMaster.blp"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Grants critical strike."
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Serrated Blade"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Grants a 20% chance to deal 2 times damage."
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 45000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 35000
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Serrated Blade"
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            }
+        ],
+        "I007:ratc": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Boosts attack damage by 500."
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Claws of Attack +500"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Claws of Attack +500"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Increases the attack damage of the wearer by 500."
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01M"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 7500
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 5000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 3
+            }
+        ],
+        "I008:frgd": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Holy Sword"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Holy Sword"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Boosts attack damage by 4000."
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Increases the attack damage of the wearer by 4000."
+            },
+            {
+                "id": "icla",
+                "type": "string",
+                "value": "Artifact"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 80000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 60000
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01U"
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 3
+            }
+        ],
+        "I000:bspd": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 1250
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Boots of Speed"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Increases the movement speed of the wearer."
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 250
+            }
+        ],
+        "I009:modt": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 40000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 30000
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01W"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "While wearing this mask, a hero will recover hit points equal to 3% of the attack damage dealt to an enemy unit. Orb effects do not stack."
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I00C:gcel": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Increases the attack speed of the wearer by 40%."
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 4000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 3000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I004:ratc": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Boosts attack damage by 100."
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Claws of Attack +100"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Claws of Attack +100"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Increases the attack damage of the wearer by 100."
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01N"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 1000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 750
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            }
+        ],
+        "I00B:stwp": [
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 30
+            },
+            {
+                "id": "isto",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ureq",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 500
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Teleports the Hero to an allied town."
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Teleports the hero to an allied town."
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Scroll of Town Portal"
+            },
+            {
+                "id": "uhot",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "isst",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 3
+            }
+        ],
+        "I00I:manh": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Permanent +1500 hit points."
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Permanently increases the hit points of the hero by 1500 when used."
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 10000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 10000
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp"
+            }
+        ],
+        "I00J:nspi": [
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 60000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 60000
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 2
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "This amulet shields the wearer from all spells, and damage from explosions,"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Necklace of Shielding"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Necklace of Shielding"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Grants immunity to magic and explosions."
+            }
+        ],
+        "I00K:olig": [
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Attacks with Orb of Lightning have a chance to purge an enemy unit, slowing its movement speed and dispelling buffs. Also allows the hero to attack air. Orb effects do not stack."
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Orb of Lightning"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "AIlb,AIll"
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "I00L:ocor": [
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Reduces the armor of enemy units by 20. Also allows the hero to attack air. Orb effects do not stack."
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Orb of Corruption"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 15000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 20000
+            }
+        ],
+        "I00M:ofir": [
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Orb of Fire"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Attacks with Orb of Fire deal an additional 2000 splash damage in a large radius. Also allows the hero to attack air. Orb effects do not stack."
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 25000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 25000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I00N:oven": [
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Orb of Venom"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Adds a long lasting, highly damaging poison to attacks that slows down enemy movement and attack speeds. Also allows the hero to attack air. Orb effects do not stack."
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 5000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I00H:rwiz": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Increases the wearer's rate of mana regeneration by 50%."
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Sobi Mask"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 1000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 1000
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "I005:shea": [
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Scroll of Healing"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Heals 2000 hit points to all friendly non-mechanical units around the hero when used."
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 500
+            },
+            {
+                "id": "uhot",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "isst",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            }
+        ],
+        "I00F:btst": [
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "AIae,AIgx"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Bestows Endurance Aura and Life Regeneration Aura upon all nearby friendly units."
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Banner of the Empire"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Banner of the Empire"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Grants Endurance Aura and Life Regeneration Aura."
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 15000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 25000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "idrp",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "I00P:stel": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 30000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 30000
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Staff of Teleportation"
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "isst",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Teleports the hero to the targeted allied land unit or structure."
+            }
+        ],
+        "I00Q:esaz": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "Heart of the Sacred Light"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "Purchase Heart of the Sacred Light"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "Improves intelligence and mana regeneration, and casts Holy Light."
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "Boosts the hero's intelligence by 20, mana regeneration by 100% and grants the ability to cast Holy Light, healing a friendly unit or damaging a zombie."
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "AIhl,AIrn,AIi6"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 40000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 35000
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            }
+        ]
+    }
+}
