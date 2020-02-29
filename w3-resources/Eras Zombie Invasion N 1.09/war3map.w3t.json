@@ -1,0 +1,1384 @@
+{
+    "original": {
+        "desc": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_4379"
+            }
+        ],
+        "modt": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 11000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 12000
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01W"
+            }
+        ],
+        "tkno": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_4380"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_4381"
+            }
+        ],
+        "gcel": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_4441"
+            }
+        ],
+        "shdt": [
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A02B,AIcf"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_2442"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_5088"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_9504"
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNArcaniteArmor.blp"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 50000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 35000
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_9505"
+            }
+        ],
+        "sbch": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12791"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12792"
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "isel",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "idrp",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "clsd": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_12793"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12794"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12795"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "lgdh": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12796"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12797"
+            },
+            {
+                "id": "idrp",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "lhst": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12711"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12713"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_12738"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "evtl": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12740"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12744"
+            }
+        ],
+        "crdt": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_12746"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12799"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12800"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_12778"
+            },
+            {
+                "id": "isel",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "idrp",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "hbth": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_12802"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12803"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12804"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_12805"
+            },
+            {
+                "id": "idrp",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "isel",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "ssil": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12643"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12646"
+            },
+            {
+                "id": "isel",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "idrp",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNWandSkull.blp"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "gvsm": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_12808"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12809"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12810"
+            }
+        ],
+        "nspi": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12811"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12812"
+            },
+            {
+                "id": "idrp",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "isel",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "clfm": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_12947"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12948"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12949"
+            },
+            {
+                "id": "isel",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            }
+        ]
+    },
+    "custom": {
+        "I002:rde3": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_1122"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_1709"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_1823"
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 1000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "iarm",
+                "type": "string",
+                "value": "Metal"
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01H"
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNLeatherUpgradeOne.blp"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_4372"
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 1000
+            }
+        ],
+        "I003:rde3": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_1555"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_1556"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_1557"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 6000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 6000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "iarm",
+                "type": "string",
+                "value": "Metal"
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01F"
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNImprovedMoonArmor.blp"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_4461"
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I006:ratc": [
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01T"
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNShamanMaster.blp"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_1824"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_4421"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_9506"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 50000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 35000
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_4423"
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            }
+        ],
+        "I007:ratc": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_2027"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_4674"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_4681"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_6921"
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01M"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 6000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 4000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 3
+            }
+        ],
+        "I008:frgd": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_4424"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_4425"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_4426"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_6922"
+            },
+            {
+                "id": "icla",
+                "type": "string",
+                "value": "Artifact"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 100000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 100000
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01U"
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 3
+            }
+        ],
+        "I000:bspd": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 2500
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_4446"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_6923"
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 500
+            }
+        ],
+        "I009:modt": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 40000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 50000
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01W"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_4983"
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I00C:gcel": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_6925"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 5000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 5000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I004:ratc": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_5996"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_5997"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_5998"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_6926"
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A01N"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 750
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 500
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            }
+        ],
+        "I00B:stwp": [
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 30
+            },
+            {
+                "id": "isto",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ureq",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 500
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_1857"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_6927"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_6076"
+            },
+            {
+                "id": "uhot",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "isst",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 3
+            }
+        ],
+        "I00I:manh": [
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_6088"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_6928"
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 10000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 10000
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNTomeBrown.blp"
+            }
+        ],
+        "I00J:nspi": [
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 75000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 75000
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 2
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_10117"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_10118"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_10119"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_8564"
+            }
+        ],
+        "I00K:olig": [
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_6930"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_6093"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 3000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 3000
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "AIlb,AIll"
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "I00L:ocor": [
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_4117"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_6095"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 15000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 25000
+            }
+        ],
+        "I00M:ofir": [
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_6096"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_9508"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 25000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 25000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I00N:oven": [
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_6098"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_7001"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 5000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I00H:rwiz": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_7002"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_6288"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 2000
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "I005:shea": [
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_6084"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_7003"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 500
+            },
+            {
+                "id": "uhot",
+                "type": "string",
+                "value": ""
+            },
+            {
+                "id": "isst",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            }
+        ],
+        "I00F:btst": [
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "AIae,AIgx"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_4070"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_5054"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_5086"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_4130"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 15000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 25000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "idrp",
+                "type": "int",
+                "value": 0
+            }
+        ],
+        "I00P:stel": [
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 50000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 50000
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_4131"
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 180
+            },
+            {
+                "id": "isst",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_7004"
+            }
+        ],
+        "I00Q:esaz": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_4133"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_4134"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_4135"
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_7005"
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "AIhl,AIrn,AIi6"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 40000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 35000
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 2
+            },
+            {
+                "id": "ubpy",
+                "type": "int",
+                "value": 1
+            }
+        ],
+        "I001:gcel": [
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_12637"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 10000
+            },
+            {
+                "id": "ilum",
+                "type": "int",
+                "value": 6000
+            },
+            {
+                "id": "istr",
+                "type": "int",
+                "value": 60
+            },
+            {
+                "id": "ubpx",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_12638"
+            },
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_12639"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_12640"
+            },
+            {
+                "id": "icid",
+                "type": "string",
+                "value": "ACua"
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "A03O"
+            }
+        ],
+        "I00A:ssil": [
+            {
+                "id": "unam",
+                "type": "string",
+                "value": "TRIGSTR_6166"
+            },
+            {
+                "id": "utip",
+                "type": "string",
+                "value": "TRIGSTR_6167"
+            },
+            {
+                "id": "isel",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "ipaw",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "idrp",
+                "type": "int",
+                "value": 1
+            },
+            {
+                "id": "iico",
+                "type": "string",
+                "value": "ReplaceableTextures\\CommandButtons\\BTNSnazzyScroll.blp"
+            },
+            {
+                "id": "igol",
+                "type": "int",
+                "value": 0
+            },
+            {
+                "id": "utub",
+                "type": "string",
+                "value": "TRIGSTR_6169"
+            },
+            {
+                "id": "ides",
+                "type": "string",
+                "value": "TRIGSTR_6170"
+            },
+            {
+                "id": "iabi",
+                "type": "string",
+                "value": "Aroa"
+            },
+            {
+                "id": "icid",
+                "type": "string",
+                "value": "ANbr"
+            }
+        ]
+    }
+}

@@ -1,0 +1,199 @@
+{
+    "original": {
+        "ATtr": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "BTtw": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "ITtc": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "BTtc": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "ATtc": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "ITtw": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            },
+            {
+                "id": "bdsn",
+                "type": "string",
+                "value": ""
+            }
+        ],
+        "FTtw": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "LTlt": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "WTtw": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "ZTtc": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "CTtc": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "NTtc": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "VTlt": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "GTsh": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "WTst": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "ZTtw": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "OTtw": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "NTtw": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "CTtr": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "JTtw": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "DTsh": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "YTwt": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "YTct": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "YTst": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "JTct": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "YTft": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ],
+        "KTtw": [
+            {
+                "id": "bhps",
+                "type": "unreal",
+                "value": 300
+            }
+        ]
+    },
+    "custom": {}
+}

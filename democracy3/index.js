@@ -2,8 +2,22 @@ var XLSX = require('xlsx')
 var fs = require('fs');
 var path = require('path');
 
-var policiesExcelPath = "./democracy3/policies.csv";
-var situationsExcelPath = "./democracy3/situations.csv";
+//
+var policiesExcelPath = "./democracy3/data/simulation/policies.csv";
+var situationsExcelPath = "./democracy3/data/simulation/situations.csv";
+
+//
+var clonesDronesPoliciesExcelPath = "./democracy3/clonesdrones/data/simulation/policies.csv";
+var clonesDronesSituationsExcelPath = "./democracy3/clonesdrones/data/simulation/situations.csv";
+
+//
+var socialEngineeringPoliciesExcelPath = "./democracy3/socialengineering/data/simulation/policies.csv";
+
+//
+var extremismPoliciesExcelPath = "./democracy3/extremism/data/simulation/policies.csv";
+var extremismSituationsExcelPath = "./democracy3/extremism/data/simulation/situations.csv";
+
+//
 var initialPoliciesExcelPath = "./democracy3/initialPolicies.xlsx";
 
 var outputExcelPath = "./democracy3/policies.xlsx";
@@ -21,32 +35,96 @@ var incomeMultiplierColumnName = "G";
 var policiesSliderColumnName = "J";
 var isPolicyActiveColumnName = "K";
 
+var policiesArrayOfArrays = undefined;
+var situationsArrayOfArrays = undefined;
+
+var allEffectsIndexes = {};
+var allSituationIndexes = {};
+
 module.exports = { "init": init };
 
 function init() {
     var policiesWorkBook = XLSX.readFile(policiesExcelPath, { type: 'string', raw: true });
     var situationsWorkBook = XLSX.readFile(situationsExcelPath, { type: 'string', raw: true });
+
+    var clonesDronesPoliciesWorkBook = XLSX.readFile(clonesDronesPoliciesExcelPath, { type: 'string', raw: true });
+    var clonesDronesSituationsWorkBook = XLSX.readFile(clonesDronesSituationsExcelPath, { type: 'string', raw: true });
+
+    var socialEngineeringPoliciesWorkBook = XLSX.readFile(socialEngineeringPoliciesExcelPath, { type: 'string', raw: true });
+
+    var extremismPoliciesWorkBook = XLSX.readFile(extremismPoliciesExcelPath, { type: 'string', raw: true });
+    var extremismSituationsWorkBook = XLSX.readFile(extremismSituationsExcelPath, { type: 'string', raw: true });
+
     var initialPoliciesWorkBook = XLSX.readFile(initialPoliciesExcelPath, { type: 'string', raw: true });
 
+
+    //
     var policiesSheet = policiesWorkBook.Sheets[policiesWorkBook.SheetNames[0]];
     var situationsSheet = situationsWorkBook.Sheets[situationsWorkBook.SheetNames[0]];
+
+    var clonesDronesPoliciesSheet = clonesDronesPoliciesWorkBook.Sheets[clonesDronesPoliciesWorkBook.SheetNames[0]];
+    var clonesDronesSituationsSheet = clonesDronesSituationsWorkBook.Sheets[clonesDronesSituationsWorkBook.SheetNames[0]];
+
+    var socialEngineeringPoliciesSheet = socialEngineeringPoliciesWorkBook.Sheets[socialEngineeringPoliciesWorkBook.SheetNames[0]];
+
+    var extremismPoliciesSheet = extremismPoliciesWorkBook.Sheets[extremismPoliciesWorkBook.SheetNames[0]];
+    var extremismSituationsSheet = extremismSituationsWorkBook.Sheets[extremismSituationsWorkBook.SheetNames[0]];
+
     var initialPoliciesSheet = initialPoliciesWorkBook.Sheets[initialPoliciesWorkBook.SheetNames[0]];
 
-    var policiesArrayOfArrays = sheet2arr(policiesSheet);
-    var situationsArrayOfArrays = sheet2arr(situationsSheet);
-    var initialPoliciesArrayOfArrays = sheet2arr(initialPoliciesSheet);
 
-    removeColumns(policiesArrayOfArrays, ["A", "C", "D", "E", "F", "G", "H", "I", "J", "S", "K", "O"]);
+    //
+    var resultArrayOfArrays = sheet2arr(policiesSheet);
+    policiesArrayOfArrays = sheet2arr(policiesSheet);
+    situationsArrayOfArrays = sheet2arr(situationsSheet);
 
-    mergeArrays(policiesArrayOfArrays, situationsArrayOfArrays);
+    var clonesDronesPoliciesArrayOfArrays = sheet2arr(clonesDronesPoliciesSheet);
+    var clonesDronesSituationsArrayOfArrays = sheet2arr(clonesDronesSituationsSheet);
 
-    modifyArray(policiesArrayOfArrays);
+    var socialEngineeringPoliciesArrayOfArrays = sheet2arr(socialEngineeringPoliciesSheet);
 
-    initPolicies(initialPoliciesArrayOfArrays, policiesArrayOfArrays);
+    var extremismPoliciesArrayOfArrays = sheet2arr(extremismPoliciesSheet);
+    var extremismSituationsArrayOfArrays = sheet2arr(extremismSituationsSheet);
 
-    createSumRow(policiesArrayOfArrays[0], policiesArrayOfArrays);
+    var initialresultArrayOfArrays = sheet2arr(initialPoliciesSheet);
 
-    var workSheet = XLSX.utils.aoa_to_sheet(policiesArrayOfArrays);
+
+    //
+    clonesDronesPoliciesArrayOfArrays.splice(0, 1);
+    clonesDronesSituationsArrayOfArrays.splice(0, 1);
+
+    socialEngineeringPoliciesArrayOfArrays.splice(0, 1);
+
+    extremismPoliciesArrayOfArrays.splice(0, 1);
+    extremismSituationsArrayOfArrays.splice(0, 1);
+
+
+    //
+    removeColumns(policiesArrayOfArrays, ["A", "C", "D", "E", "F", "G", "H", "I", "J", "S", "K", "O"], false);
+    removeColumns(clonesDronesPoliciesArrayOfArrays, ["A", "C", "D", "E", "F", "G", "H", "I", "J", "S", "K", "O"], false);
+    removeColumns(socialEngineeringPoliciesArrayOfArrays, ["A", "C", "D", "E", "F", "G", "H", "I", "J", "S", "K", "O"], false);
+    removeColumns(extremismPoliciesArrayOfArrays, ["A", "C", "D", "E", "F", "G", "H", "I", "J", "S", "K", "O"], false);
+    removeColumns(resultArrayOfArrays, ["A", "C", "D", "E", "F", "G", "H", "I", "J", "S", "K", "O"]);
+
+
+    //
+    resultArrayOfArrays = resultArrayOfArrays.concat(socialEngineeringPoliciesArrayOfArrays)
+        .concat(extremismPoliciesArrayOfArrays).concat(clonesDronesPoliciesArrayOfArrays);
+    policiesArrayOfArrays = policiesArrayOfArrays.concat(socialEngineeringPoliciesArrayOfArrays)
+        .concat(extremismPoliciesArrayOfArrays).concat(clonesDronesPoliciesArrayOfArrays);
+    situationsArrayOfArrays = situationsArrayOfArrays.concat(extremismSituationsArrayOfArrays)
+        .concat(clonesDronesSituationsArrayOfArrays);
+
+
+    mergeArrays(resultArrayOfArrays, situationsArrayOfArrays);
+
+    modifyArray(resultArrayOfArrays);
+
+    initPolicies(initialresultArrayOfArrays, resultArrayOfArrays);
+
+    createSumRow(resultArrayOfArrays[0], resultArrayOfArrays);
+
+    var workSheet = XLSX.utils.aoa_to_sheet(resultArrayOfArrays);
 
     createFormulas(workSheet);
 
@@ -56,13 +134,13 @@ function init() {
     XLSX.writeFile(policiesWorkBook, outputExcelPath);
 };
 
-function initPolicies(initialPoliciesArrayOfArrays, policiesArrayOfArrays) {
-    for (var i = 1; i < initialPoliciesArrayOfArrays.length; i++) {
-        var initialPolicy = initialPoliciesArrayOfArrays[i];
+function initPolicies(initialresultArrayOfArrays, resultArrayOfArrays) {
+    for (var i = 1; i < initialresultArrayOfArrays.length; i++) {
+        var initialPolicy = initialresultArrayOfArrays[i];
 
         var effectName = formatEffectName(initialPolicy[0]);
 
-        var policyRow = policiesArrayOfArrays.find(r => formatEffectName(r[0]) == effectName);
+        var policyRow = resultArrayOfArrays.find(r => formatEffectName(r[0]) == effectName);
         if (policyRow) {
             policyRow[alphaToNum(isPolicyActiveColumnName)] = 1;
             policyRow[alphaToNum(policiesSliderColumnName)] = initialPolicy[1];
@@ -70,9 +148,13 @@ function initPolicies(initialPoliciesArrayOfArrays, policiesArrayOfArrays) {
     }
 }
 
-function mergeArrays(policiesArrayOfArrays, situationsArrayOfArrays) {
+function mergeArrays(resultArrayOfArrays, situationsArrayOfArrays) {
     for (var i = 1; i < situationsArrayOfArrays.length; i++) {
         var situation = situationsArrayOfArrays[i];
+
+        if (i == 28) {
+            var a = 5;
+        }
 
         var lastIndexOf = situation.lastIndexOf("#");
         var causes = situation.slice(13, lastIndexOf);
@@ -89,70 +171,69 @@ function mergeArrays(policiesArrayOfArrays, situationsArrayOfArrays) {
                 var newRegEx = new RegExp(effectName, "i");
                 effect = effect.replace(newRegEx, situation[1]);
 
-                var policyRow = policiesArrayOfArrays.find(r => formatEffectName(r[0]) == effectName);
+                if (!getPolicy(effectName)) {
+                    effect = effect.replace(/(?<=\W)x(?=\W*)/, effectName);
+                }
+
+                var policyRow = resultArrayOfArrays.find(r => formatEffectName(r[0]) == effectName);
                 if (policyRow) {
                     policyRow.push(effect);
                 }
                 else {
-                    effect = effect.replace(/(?<=\W)x(?=\W*)/, effectName);
-
                     var newRow = new Array(sliceIndexConst);
                     newRow[0] = effectName;
                     newRow[1] = newRow[2] = newRow[3] = newRow[4] = newRow[5] = newRow[6] = 0;
-                    newRow[10] = 1;
                     newRow.push(effect)
-                    policiesArrayOfArrays.push(newRow);
+                    resultArrayOfArrays.push(newRow);
                 }
             }
         }
 
         // Add situation effects
-        for (var j = 0; j < effects.length; j++) {
-            var effect = effects[j];
+        // for (var j = 0; j < effects.length; j++) {
+        //     var effect = effects[j];
 
-            if (effect) {
-                var policyRow = policiesArrayOfArrays.find(r => formatEffectName(r[0]) == formatEffectName(situation[1]));
-                if (policyRow) {
-                    policyRow.push(effect);
-                }
-                else {
-                    var newRow = new Array(sliceIndexConst);
-                    newRow[0] = situation[1];
-                    newRow[1] = newRow[2] = newRow[3] = newRow[4] = newRow[5] = newRow[6] = 0;
-                    newRow[10] = 1;
-                    newRow.push(effect)
-                    policiesArrayOfArrays.push(newRow);
-                }
-            }
-        }
+        //     if (effect) {
+        //         var policyRow = resultArrayOfArrays.find(r => formatEffectName(r[0]) == formatEffectName(situation[1]));
+        //         if (policyRow) {
+        //             policyRow.push(effect);
+        //         }
+        //         else {
+        //             var newRow = new Array(sliceIndexConst);
+        //             newRow[0] = situation[1];
+        //             newRow[1] = newRow[2] = newRow[3] = newRow[4] = newRow[5] = newRow[6] = 0;
+        //             newRow.push(effect)
+        //             resultArrayOfArrays.push(newRow);
+        //         }
+        //     }
+        // }
     }
 }
 
 function modifyArray(arrayOfArrays) {
-    var allEffectsIndexes = {};
     var header = arrayOfArrays[0];
 
-    // TOTAL COST
+    // ADD TOTAL COST COLUMN
     header.splice(sliceIndexConst, 0, "TOTAL COST");
 
-    // TOTAL INCOME
+    // ADD TOTAL INCOME COLUMN
     header.splice(sliceIndexConst + 1, 0, "TOTAL INCOME");
 
-    // POLICIES SLIDER
+    // ADD POLICIES SLIDER COLUMN
     header.splice(sliceIndexConst + 2, 0, "POLICIES SLIDER");
 
-    // POLICY ACTIVE
+    // ADD POLICY ACTIVE COLUMN
     header.splice(sliceIndexConst + 3, 0, "POLICY ACTIVE");
 
     for (var i = 1; i < arrayOfArrays.length; i++) {
-        var array = arrayOfArrays[i];
+        var row = arrayOfArrays[i];
 
         var sliceIndex = sliceIndexConst;
-        var part1 = array.slice(0, sliceIndex);
-        var effects = array.slice(sliceIndex, array.length);
+        var policy = row.slice(0, sliceIndex);
+        var effects = row.slice(sliceIndex, row.length);
 
-        // TOTAL COST
-        part1.push("=(" + getColumnAddress(minCostColumnName, i + 1) + "+("
+        // SET TOTAL COST FORMULA
+        policy.push("=(" + getColumnAddress(minCostColumnName, i + 1) + "+("
             + getColumnAddress(maxCostColumnName, i + 1) + "-"
             + getColumnAddress(minCostColumnName, i + 1) + ")*("
             + getColumnAddress(costMultiplierColumnName, i + 1) + "+"
@@ -160,8 +241,8 @@ function modifyArray(arrayOfArrays) {
             + getColumnAddress(isPolicyActiveColumnName, i + 1));
         sliceIndex++;
 
-        // TOTAL INCOME
-        part1.push("=(" + getColumnAddress(minIncomeColumnName, i + 1) + "+("
+        // SET TOTAL INCOME FORMULA
+        policy.push("=(" + getColumnAddress(minIncomeColumnName, i + 1) + "+("
             + getColumnAddress(maxIncomeColumnName, i + 1) + "-"
             + getColumnAddress(minIncomeColumnName, i + 1) + ")*("
             + getColumnAddress(incomeMultiplierColumnName, i + 1) + "+"
@@ -169,12 +250,12 @@ function modifyArray(arrayOfArrays) {
             + getColumnAddress(isPolicyActiveColumnName, i + 1));
         sliceIndex++;
 
-        // POLICIES SLIDER
-        part1.push("=0");
+        // SET POLICIES SLIDER FORMULA
+        policy.push("=0");
         sliceIndex++;
 
-        // POLICY ACTIVE
-        part1.push("=0");
+        // SET POLICY ACTIVE FORMULA
+        policy.push("=0");
         sliceIndex++;
 
         for (var j = 0; j < effects.length; j++) {
@@ -197,16 +278,30 @@ function modifyArray(arrayOfArrays) {
                     effectFormula = setFormulaBoundaries(effectFormula.replace(/(?<=\W)x(?=\W*)/, getColumnAddress(policiesSliderColumnName, i + 1)));
                 }
 
-                var insertIndex = sliceIndex + Object.keys(allEffectsIndexes).length;
-                if (allEffectsIndexes[effectName]) {
-                    insertIndex = allEffectsIndexes[effectName];
+                var insertIndex = 0;
+                if (getSituation(effectName)) {
+                    insertIndex = sliceIndex + Object.keys(allSituationIndexes).length;
+                    if (allSituationIndexes[effectName]) {
+                        insertIndex = allSituationIndexes[effectName];
+                    }
+                    else {
+                        allSituationIndexes[effectName] = insertIndex;
+                    }
                 }
                 else {
-                    allEffectsIndexes[effectName] = insertIndex;
+                    insertIndex = sliceIndex + Object.keys(allEffectsIndexes).length + 60;
+                    if (allEffectsIndexes[effectName]) {
+                        insertIndex = allEffectsIndexes[effectName];
+                    }
+                    else {
+                        allEffectsIndexes[effectName] = insertIndex;
+                    }
                 }
 
-                if (insertIndex >= part1.length) {
-                    part1.length = insertIndex + 1;
+
+
+                if (insertIndex >= policy.length) {
+                    policy.length = insertIndex + 1;
                 }
 
                 if (insertIndex >= header.length) {
@@ -214,11 +309,11 @@ function modifyArray(arrayOfArrays) {
                 }
 
                 header[insertIndex] = effectName;
-                part1[insertIndex] = effectFormula;
+                policy[insertIndex] = effectFormula;
             }
         }
 
-        arrayOfArrays[i] = part1;
+        arrayOfArrays[i] = policy;
     }
 
     parseOtherFormulas(arrayOfArrays);
@@ -230,12 +325,16 @@ function getColumnAddress(columnName, index) {
     return columnName + index;
 }
 
-function removeColumns(arrayOfArrays, columnNames) {
+function removeColumns(arrayOfArrays, columnNames, enableSliceIndex = true) {
     var columnIndexes = columnNames.map(v => alphaToNum(v))
         .sort(function (a, b) { return b - a });
 
     for (var i = 0; i < arrayOfArrays.length; i++) {
         var array = arrayOfArrays[i];
+
+        if (i == 123) {
+            var a = 5;
+        }
 
         for (var j = 0; j < columnIndexes.length; j++) {
             var columnIndex = columnIndexes[j];
@@ -244,18 +343,23 @@ function removeColumns(arrayOfArrays, columnNames) {
         }
     }
 
-    sliceIndexConst = sliceIndexConst - columnIndexes.length;
+    if (enableSliceIndex) {
+        sliceIndexConst = sliceIndexConst - columnIndexes.length;
+    }
 }
 
 function createSumRow(header, arrayOfArrays) {
     arrayOfArrays.push(new Array(header.length));
     var sumRow = arrayOfArrays[arrayOfArrays.length - 1];
 
+    // Effects sum
     for (var i = 0; i < header.length; i++) {
         var rowChar = numToAlpha(i);
         sumRow[i] = setFormulaBoundaries("SUM(" + rowChar + "2:" + rowChar + (arrayOfArrays.length - 1) + ")");
     }
 
+
+    // Multipliers sum
     var headerIndexes = [
         alphaToNum("H"),
         alphaToNum("I"),
@@ -266,21 +370,30 @@ function createSumRow(header, arrayOfArrays) {
         var rowChar = numToAlpha(headerIndex);
         sumRow[headerIndex] = "=SUM(" + rowChar + "2:" + rowChar + (arrayOfArrays.length - 1) + ")";
     }
-}
 
-// Create formulas from values
-function createFormulas(workSheet) {
-    var keys = Object.keys(workSheet);
-    for (var i = 0; i < keys.length; i++) {
-        var key = keys[i];
+    // SET POLICY ACTIVE FORMULA
+    for (var i = 0; i < arrayOfArrays.length; i++) {
+        var row = arrayOfArrays[i];
 
-        var cell = workSheet[key];
-
-        if (cell.v && cell.v[0] == "=") {
-            cell.f = cell.v;
-            cell.v = undefined;
+        if (!policiesArrayOfArrays.find(p => p[0] == row[0])) {
+            if (getSituation(row[0])) {
+                //row[10] = "=IF(" + numToAlpha(allEffectsIndexes[formatEffectName(row[0])]) + (arrayOfArrays.length) + "<0, 1, 0)";
+            }
+            else {
+                row[10] = "=1";
+            }
         }
     }
+}
+
+function getSituation(name) {
+    var nameInt = formatEffectName(name);
+    return situationsArrayOfArrays.find(p => formatEffectName(p[1]) == nameInt);
+}
+
+function getPolicy(name) {
+    var nameInt = formatEffectName(name);
+    return policiesArrayOfArrays.find(p => formatEffectName(p[0]) == nameInt);
 }
 
 function substituteFormulaVariables(allEffectsIndexes, arrayOfArrays) {
@@ -381,6 +494,21 @@ function parseMultiplierFormulas(formula) {
         var effectsFormula = setFormulaBoundaries(effects.join("+"), 0, 10);
 
         return effectsFormula;
+    }
+}
+
+// Create formulas from values
+function createFormulas(workSheet) {
+    var keys = Object.keys(workSheet);
+    for (var i = 0; i < keys.length; i++) {
+        var key = keys[i];
+
+        var cell = workSheet[key];
+
+        if (cell.v && cell.v[0] == "=") {
+            cell.f = cell.v;
+            cell.v = undefined;
+        }
     }
 }
 
