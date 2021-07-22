@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/bakster55/W3JsonToExcel#readme",
   "devDependencies": {
-    "xlsx": "^0.14.1"
+    "xlsx": "^0.17.0"
   }
 }
